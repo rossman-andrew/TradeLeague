@@ -12,7 +12,7 @@ const session = require('express-session');
 passport.use(new Strategy({
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-  callbackURL: 'http://tradeleague.herokuapp.com/login/google/return',
+  callbackURL: 'http://localhost:3000/login/google/return',
   profileFields: ['id', 'displayName', 'email']
 },
 (accessToken, refreshToken, profile, cb) => {
@@ -107,7 +107,6 @@ const cronJob = (stocks) => {
       } else {
         secondHalf = stocks;
       }
-      count++;
     })
     .catch((err) => {
       console.log(err);
