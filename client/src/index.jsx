@@ -43,7 +43,7 @@ class App extends Component {
           page
         >
           <Header as='h2' icon inverted>
-            <Icon name='heart' />
+            <Icon name='trophy' />
             Times Up!
             <Header.Subheader>Markets Closed.</Header.Subheader>
           </Header>
