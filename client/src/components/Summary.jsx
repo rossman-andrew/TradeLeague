@@ -36,7 +36,7 @@ class Summary extends Component {
 
   render() {
     return (
-      <Menu size='small'>
+      <Menu size='small' className='ui top fixed'>
         <Menu.Item name='Trade League' />
         <Menu.Item>
           <LeaderBoard totalCost={this.findTotalCost()} totalGain={this.findTotalGain()} />
@@ -75,4 +75,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(Summary);
-
