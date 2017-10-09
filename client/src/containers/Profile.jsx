@@ -49,7 +49,7 @@ class Profile extends Component {
           <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
           <Modal.Description>
             <Header>Profile Statistics</Header>
-            <p>Total Cost: {this.props.totalCost}</p>
+            <p>Total Exposure: {this.props.totalCost}</p>
             <p>Total Gain: {this.props.totalGain}</p>
             <Accordion fluid styled>
               {this.props.portfolio.map((stock, index) => this.makeStocks(stock, index))}

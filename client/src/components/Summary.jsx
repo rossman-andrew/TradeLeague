@@ -3,7 +3,7 @@ import { Button, Menu, Input } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import Profile from '../containers/Profile.jsx';
-
+import LeaderBoard from '../containers/LeaderBoard.jsx';
 
 class Summary extends Component {
 
@@ -39,10 +39,13 @@ class Summary extends Component {
       <Menu size='small'>
         <Menu.Item name='Trade League' />
         <Menu.Item>
+          <LeaderBoard totalCost={this.findTotalCost()} totalGain={this.findTotalGain()} />
+        </Menu.Item>
+        <Menu.Item>
           <Profile totalCost={this.findTotalCost()} totalGain={this.findTotalGain()} />
         </Menu.Item>
         <Menu.Item name={`Total Gain ${this.findTotalGain()}`} />
-        <Menu.Item name={`Total Cost ${this.findTotalCost()}`} />
+        <Menu.Item name={`Total Exposure ${this.findTotalCost()}`} />
         {this.props.portfolio.map(stock => {
           if (stock.number_of_shares === 0) {
             return;
