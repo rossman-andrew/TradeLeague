@@ -12,7 +12,7 @@ const session = require('express-session');
 passport.use(new Strategy({
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-  callbackURL: 'http://localhost:3000/login/google/return',
+  callbackURL: 'http://tradeleague.herokuapp.com/login/google/return',
   profileFields: ['id', 'displayName', 'email']
 },
 (accessToken, refreshToken, profile, cb) => {
@@ -53,8 +53,8 @@ const dummyStocks = [
   {name: 'Wal-Mart Stores', ticker: 'WMT'},
   {name: 'Morgan Stanley', ticker: 'MS'},
   {name: 'Exxon Mobil', ticker: 'XOM'},
-  {name: 'Apple', ticker: 'AAPL'},
-  {name: 'Alphabet', ticker: 'GOOG'},
+  // {name: 'Apple', ticker: 'AAPL'},
+  // {name: 'Alphabet', ticker: 'GOOG'},
   // {name: 'Microsoft', ticker: 'MSFT'},
   // {name: 'Amazon', ticker: 'AMZN'},
   // {name: 'Berkshire Hathaway', ticker: 'BRK-B'},
