@@ -55,7 +55,7 @@ const dummyStocks = [
   {name: 'Exxon Mobil', ticker: 'XOM'},
   {name: 'Apple', ticker: 'AAPL'},
   {name: 'Alphabet', ticker: 'GOOG'},
-  {name: 'Microsoft', ticker: 'MSFT'},
+  // {name: 'Microsoft', ticker: 'MSFT'},
   // {name: 'Amazon', ticker: 'AMZN'},
   // {name: 'Berkshire Hathaway', ticker: 'BRK-B'},
   // {name: 'Johnson & Johnson', ticker: 'JNJ'},

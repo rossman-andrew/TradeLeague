@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Segment, Header, Icon } from 'semantic-ui-react';
+import { Grid, Segment, Icon } from 'semantic-ui-react';
 import StockChart from './StockChart.jsx';
 import { Input, Button } from 'semantic-ui-react';
 
@@ -30,7 +30,7 @@ class StockListEntry extends Component {
     return (
       <Grid.Column mobile={12} tablet={6} computer={5}>
         <Segment >
-          <Header as='h4' onClick={() => this.props.onTitleClick(this.props.stock)} >{this.props.stock.name}</Header> 
+          <h4 onClick={() => this.props.onTitleClick(this.props.stock)} >{this.props.stock.name}</h4> 
           Symbol: {this.props.stock.symbol} <br></br>
           Net Gain: {this.props.stock.net_gain} <br></br>
           Number of Shares: {this.props.stock.number_of_shares} <br></br>
